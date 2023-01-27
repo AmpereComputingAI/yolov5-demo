@@ -1,0 +1,13 @@
+services:
+  yolo-demo:
+    image: yolo-live-demo:1.2.2
+    container_name: yolo-demo
+    build:
+      context: ./
+    network_mode: host
+    ipc: host
+    environment:
+      FLASK_RUN_HOST: ${FLASK_RUN_HOST:-0.0.0.0}
+      FLASK_RUN_PORT: ${FLASK_RUN_PORT:-5000}
+      NUM_THREADS: ${NUM_THREADS:-32}
+      VIDEO_SRC: ${VIDEO_SRC:-''}
