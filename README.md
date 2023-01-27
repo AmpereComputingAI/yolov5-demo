@@ -3,30 +3,37 @@
 YOLOv5 is a family of object detection architectures and models
 pretrained on the COCO dataset.
 
-## Starting the container and running the demo
+## Download the demo repository
+> $ git clone <>  
+\$ cd yolov5-demo
 
-Login to cloud instance or local server
-> $ ssh -i \<key\> user@server
 
-Find the docker image,
-> $ docker images | grep yolov5-pytorch-aio-demo
+## Install docker
+Follow the instructions from this link,
+https://docs.docker.com/engine/install/ubuntu/
 
-For cloud based environments,
-> $ ./start-docker-cloud.sh  
-Starting YOLOv5 demo container  
-Docker container ID: 592441933d5b  
+## Install compose plugin
+Follow the instructions from this link,
+https://docs.docker.com/compose/install/linux/#install-using-the-repository
 
-Webapp and Notebook URLs will be printed,
-> Getting Webapp URL ........  
-Webapp URL: http://\<ipaddr\>:7860/  
->
-> Getting Jupyter Notebook URL ..  
-Jupyter Notebook URL: or http://\<ipaddr\>:8888/lab?token=77a18bd0a9c278df710f0b2c83a052ddaa245d7ee9c5b8cd  
+## Open the required ports
+> sudo firewall-cmd --zone public --permanent --add-port <port>/tcp  
+sudo firewall-cmd --reload
 
-For non-cloud environments,  
-> $ ./start-docker-local.sh
+## Start the demo
+start-yolo-demo.sh contains few video sources.  Please select the video source and then run the script
+> $ ./start-yolo-demo.sh
 
-Open your favorite browser and type in the above URLs.
+Console log should like this,
+> yolo-demo  |  * Running on all addresses (0.0.0.0)  
+yolo-demo  |  * Running on http://127.0.0.1:5001  
+yolo-demo  |  * Running on http://10.0.88.232:5001
+
+Open your favorite browser and type in the following URL.
+> http://127.0.0.1:5001/app
+
+## Stop the demo
+> $ ./stop-yolo-demo.sh
 
 ## Reference
 https://github.com/ultralytics/yolov5
