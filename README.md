@@ -4,7 +4,7 @@ YOLOv5 is a family of object detection architectures and models
 pretrained on the COCO dataset.
 
 ## Download the demo repository
-> $ git clone <>  
+> $ git clone https://github.com/AmpereComputingAI/yolov5-demo.git  
 \$ cd yolov5-demo
 
 
@@ -17,7 +17,7 @@ Follow the instructions from this link,
 https://docs.docker.com/compose/install/linux/#install-using-the-repository
 
 ## Open the required ports
-> sudo firewall-cmd --zone public --permanent --add-port <port>/tcp  
+> sudo firewall-cmd --zone public --permanent --add-port \<port>/tcp  
 sudo firewall-cmd --reload
 
 ## Start the demo
