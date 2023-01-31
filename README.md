@@ -3,7 +3,7 @@
 YOLOv5 is a family of object detection architectures and models
 pretrained on the COCO dataset.
 
-This demo runs YOLOv5 object detection and classification ML inference 
+This demo for Ampere Altra/Max systems runs YOLOv5 object detection and classification ML inference 
 using provided source video and outputs it to your browser at a smooth 30 frames per second. 
 with bounding boxes showing classification confidence and inference latency in milliseconds. We may also add 60FPS examples.
 
