@@ -42,7 +42,7 @@ Open your favorite browser and type in the following URL.
 > $ ./stop-yolo-demo.sh
 
 ## Select another video file as source
-Edit start-yolodemo.sh to select a different video source file by uncommenting it.
+Edit start-yolo-demo.sh to select a different video source file by uncommenting it.
 
 ## Reference
 https://github.com/ultralytics/yolov5
