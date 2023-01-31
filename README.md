@@ -3,6 +3,12 @@
 YOLOv5 is a family of object detection architectures and models
 pretrained on the COCO dataset.
 
+This demo runs YOLOv5 object detection and classification ML inference 
+using provided source video and outputs it to your browser at a smooth 30 frames per second. 
+with bounding boxes showing classification confidence and inference latency in milliseconds. We may also add 60FPS examples.
+
+![MedleyYOLO-jutah](https://user-images.githubusercontent.com/8238588/215856385-28b084ad-08f7-4a65-82be-a558d7d3203a.gif)
+
 ## Download the demo repository
 > $ git clone https://github.com/AmpereComputingAI/yolov5-demo.git  
 \$ cd yolov5-demo
