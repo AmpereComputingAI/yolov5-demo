@@ -2,7 +2,7 @@
 
 export FLASK_RUN_HOST="0.0.0.0"
 export FLASK_RUN_PORT=5001
-export NUM_THREADS=48
+export NUM_THREADS=32
 
 # Select one of the following
 export VIDEO_SRC='examples/Driving-NYC-360p-jutah.mp4'
