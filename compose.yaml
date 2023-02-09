@@ -1,9 +1,6 @@
 services:
-  yolo-demo:
+  app-yolo-live:
     image: ghcr.io/amperecomputingai/yolo-live-demo:1.2.3
-    container_name: yolo-demo
-    build:
-      context: ./
     network_mode: host
     ipc: host
     environment:
