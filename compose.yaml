@@ -1,6 +1,7 @@
 services:
   app-yolo-live:
-    image: ghcr.io/amperecomputingai/yolo-live-demo:1.2.3
+    #image: ghcr.io/amperecomputingai/yolo-live-demo:1.2.3
+    image: yolo-live-demo:1.2.4
     network_mode: host
     ipc: host
     environment:
@@ -8,3 +9,21 @@ services:
       FLASK_RUN_PORT: ${FLASK_RUN_PORT:-5000}
       NUM_THREADS: ${NUM_THREADS:-32}
       VIDEO_SRC: ${VIDEO_SRC:-''}
+
+  app-yolo-live-gpu:
+    image: yolo-live-gpu-demo:1.2.4
+    network_mode: host
+    ipc: host
+    environment:
+      FLASK_RUN_HOST: ${FLASK_RUN_HOST:-0.0.0.0}
+      FLASK_RUN_PORT: ${FLASK_RUN_PORT:-5000}
+      NUM_THREADS: ${NUM_THREADS:-32}
+      VIDEO_SRC: ${VIDEO_SRC:-''}
+      CUDA_VISIBLE_DEVICES: ${CUDA_VISIBLE_DEVICES:-'0'}
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
+              driver: nvidia
+              device_ids: ['0']
