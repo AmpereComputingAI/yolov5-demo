@@ -1,7 +1,6 @@
 services:
   app-yolo-live:
-    #image: ghcr.io/amperecomputingai/yolo-live-demo:1.2.3
-    image: yolo-live-demo:1.2.4
+    image: ghcr.io/amperecomputingai/yolo-live-demo:1.2.4
     network_mode: host
     ipc: host
     environment:
@@ -11,7 +10,7 @@ services:
       VIDEO_SRC: ${VIDEO_SRC:-''}
 
   app-yolo-live-gpu:
-    image: yolo-live-gpu-demo:1.2.4
+    image: ghcr.io/amperecomputingai/yolo-live-demo:1.2.4-gpu
     network_mode: host
     ipc: host
     environment:
