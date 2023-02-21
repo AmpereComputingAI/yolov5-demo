@@ -1,6 +1,6 @@
 services:
   app-yolo-live:
-    image: ghcr.io/amperecomputingai/yolo-live-demo:1.2.5
+    image: ghcr.io/amperecomputingai/yolo-live-demo:1.2.6
     network_mode: host
     ipc: host
     volumes:
