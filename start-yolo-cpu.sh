@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Select one of the following
+#export VIDEO_SRC=0
 #export VIDEO_SRC='examples/Driving-NYC-360p-jutah.mp4'
 #export VIDEO_SRC='examples/Driving-Vegas-360p-jutah.mp4'
 #export VIDEO_SRC='examples/Driving-Medley-jutah.mp4'
