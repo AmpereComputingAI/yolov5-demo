@@ -1,7 +1,6 @@
 services:
   app-yolo-live:
-    image: ghcr.io/amperecomputingai/yolo-live-demo:1.2.6
-    network_mode: host
+    image: ghcr.io/amperecomputingai/yolo-live-demo:1.2.7
     ipc: host
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix:ro
@@ -9,22 +8,27 @@ services:
     environment:
       FLASK_RUN_HOST: ${FLASK_RUN_HOST:-0.0.0.0}
       FLASK_RUN_PORT: ${FLASK_RUN_PORT:-5000}
+      HOST_PORT: ${HOST_PORT:-5000}
       NUM_THREADS: ${NUM_THREADS:-32}
       VIDEO_SRC: ${VIDEO_SRC:-''}
+    ports:
+      - "${HOST_PORT}:${FLASK_RUN_PORT:-5000}"
 
   app-yolo-live-gpu:
-    image: ghcr.io/amperecomputingai/yolo-live-demo:1.2.6-gpu
-    network_mode: host
+    image: ghcr.io/amperecomputingai/yolo-live-demo:1.2.7-gpu
     ipc: host
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix:ro
     privileged: true
     environment:
       FLASK_RUN_HOST: ${FLASK_RUN_HOST:-0.0.0.0}
-      FLASK_RUN_PORT: ${FLASK_RUN_PORT:-5000}
+      FLASK_RUN_PORT: ${FLASK_RUN_PORT:-5001}
+      HOST_PORT: ${HOST_PORT:-5000}
       NUM_THREADS: ${NUM_THREADS:-32}
       VIDEO_SRC: ${VIDEO_SRC:-''}
       CUDA_VISIBLE_DEVICES: ${CUDA_VISIBLE_DEVICES:-'0'}
+    ports:
+      - "${HOST_PORT}:${FLASK_RUN_PORT:-5001}"
     deploy:
       resources:
         reservations:
