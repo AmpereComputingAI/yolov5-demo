@@ -12,7 +12,7 @@ export CUDA_VISIBLE_DEVICES='0'
 export FLASK_RUN_HOST="0.0.0.0"
 export FLASK_RUN_PORT=5001
 export NUM_THREADS=32
-export HOST_PORT=5000
+export HOST_PORT=5005
 export VIDEO_SRC='examples/Driving-NYC-360p-jutah.mp4'
 
 cont_name="cont-gpu-1"
