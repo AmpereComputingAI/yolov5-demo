@@ -26,7 +26,7 @@ https://docs.docker.com/compose/install/linux/#install-using-the-repository
 
 ## Open the required ports
 ```shell
-$ sudo firewall-cmd --zone public --permanent --add-port <port>/tcp
+$ sudo firewall-cmd --zone public --permanent --add-port 5000-5010/tcp
 $ sudo firewall-cmd --reload
 ```
 
