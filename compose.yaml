@@ -1,6 +1,6 @@
 services:
   app-yolo-live:
-    image: ghcr.io/amperecomputingai/yolo-live-demo:1.2.8
+    image: ghcr.io/amperecomputingai/yolo-live-demo:1.2.8.1
     ipc: host
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix:ro
@@ -15,7 +15,7 @@ services:
       - "${HOST_PORT}:${FLASK_RUN_PORT:-5000}"
 
   app-yolo-live-gpu:
-    image: ghcr.io/amperecomputingai/yolo-live-demo:1.2.8-gpu
+    image: ghcr.io/amperecomputingai/yolo-live-demo:1.2.8.1-gpu
     ipc: host
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix:ro
