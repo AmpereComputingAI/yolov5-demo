@@ -1,4 +1,4 @@
-# Yolov5 demo
+<center> <h1>YOLOv5 demo </h1> </center>
 
 YOLOv5 is a family of object detection architectures and models
 pretrained on the COCO dataset.

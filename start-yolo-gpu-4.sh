@@ -6,6 +6,8 @@
 #export VIDEO_SRC='examples/Driving-Medley-jutah.mp4'
 #export VIDEO_SRC='examples/video-small-640.mp4'
 #export VIDEO_SRC='examples/ParisMorningRain-jutah.mp4'
+#export VIDEO_SRC='examples/Driving-Dubai-Downtown-Skyscraper-Sunset-720p-jutah.mp4'
+#export VIDEO_SRC='examples/Driving-Tokyo-Main-Street-Morning-720p-jutah.mp4'
 #export VIDEO_SRC='https://www.youtube.com/watch?v=1EiC9bvVGnk'
 
 export CUDA_VISIBLE_DEVICES='0'
