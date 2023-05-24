@@ -9,6 +9,10 @@
 #export VIDEO_SRC='examples/Driving-Dubai-Downtown-Skyscraper-Sunset-720p-jutah.mp4'
 #export VIDEO_SRC='examples/Driving-Tokyo-Main-Street-Morning-720p-jutah.mp4'
 #export VIDEO_SRC='https://www.youtube.com/watch?v=1EiC9bvVGnk'
+#export VIDEO_SRC='examples/Taipei-Taiwan-Night-Drive-0-5.mp4'
+#export VIDEO_SRC='examples/Taipei-Taiwan-Night-Drive-5-10.mp4'
+#export VIDEO_SRC='examples/Taipei-Taiwan-Night-Drive-10-15.mp4'
+#export VIDEO_SRC='examples/Taipei101-driving-3min-jutah-360p.mp4'
 
 export FLASK_RUN_HOST="0.0.0.0"
 export FLASK_RUN_PORT=5000

@@ -1,6 +1,6 @@
 services:
   app-yolo-live:
-    image: ghcr.io/amperecomputingai/yolo-live-demo:1.2.8.3
+    image: ghcr.io/amperecomputingai/yolo-live-demo:1.2.8.5
     ipc: host
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix:ro
